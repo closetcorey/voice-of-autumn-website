@@ -1,0 +1,53 @@
+# Voices of Autumn — event mini-site
+
+Bilingual (English / 中文) site for **Voices of Autumn**, CAPA-TE's free community concert at Wilson Farm Park on Saturday, October 10, 2026, 2–5 pm.
+
+Plain HTML, CSS and JavaScript. There is no build step: upload the folder as-is.
+
+```
+index.html      Home: hero, event facts, program, choir, visit info, CAPA-TE, partner logos
+donate.html     Donate (GlueUp link + QR code)
+partners.html   Partners by tier + "Become a partner"
+css/style.css   All styles (colors and fonts are set at the top)
+js/i18n.js      Chinese translations
+js/program.js   Concert program and choir/band/crew roster (English + Chinese)
+js/main.js      Language toggle, mobile menu, partner logos, partner popup
+images/         Photos, poster, logos, QR code
+```
+
+## Putting it on capate.org
+
+Every link and image path is relative, so the folder works under any address.
+
+1. Upload everything **except** `README.md` and `.git` into a folder named `voices-of-autumn` on the web host. Use the host's file manager, FTP/SFTP, or a WordPress file-manager plugin.
+2. Open `https://capate.org/voices-of-autumn/` to check it.
+3. Add a "Voices of Autumn" item to the CAPA-TE site menu that links to that address.
+
+If you use a different folder name or domain, update the `og:image` address in the `<head>` of the three HTML pages. It is the image Facebook and similar apps show when someone shares the link.
+
+**If capate.org can't host uploaded files** (e.g. Wix or Squarespace), publish this repository with GitHub Pages instead: *Settings → Pages → Deploy from branch*. Then point the CAPA-TE menu item at that address.
+
+## Sharing in Chinese
+
+Add `?lang=zh` to any link to open it in Chinese, e.g. `https://capate.org/voices-of-autumn/?lang=zh` for WeChat. Visitors can switch with the 中文 / English button, and their choice is remembered.
+
+## Editing
+
+| To change… | Edit |
+|---|---|
+| English text | the HTML page itself |
+| Chinese text | `js/i18n.js`: find the key used by the element's `data-i18n` attribute |
+| Songs, performers, order | `PROGRAM` in `js/program.js` |
+| Choir/band/crew lists | `ROSTER` in `js/program.js` (`NAMES` holds English spellings of Chinese names) |
+| Partners | the tier sections in `partners.html` **and** the `PARTNERS` list in `js/main.js` (logo strip + popup) |
+| Donation link | the `Donate now` button in `donate.html` |
+| Hero photo | replace `images/hero-autumn.jpg` (a wider, higher-resolution photo, ~1600×800, will look sharper) |
+
+The partner popup appears once per browser session on the Home and Donate pages. It never appears on the Partners page.
+
+## Previewing locally
+
+```sh
+python3 -m http.server 8000
+# then open http://localhost:8000/
+```

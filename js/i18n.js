@@ -71,7 +71,7 @@ window.VOA_ZH = {
   // visit
   'visit.h': '到访威尔逊农场公园',
   'visit.when': '2026年10月10日（星期六）下午 2:00 – 5:00',
-  'visit.addr': '500 Lee Road, Chesterbrook, PA 19087（宾夕法尼亚州韦恩）',
+  'visit.addr': '500 Lee Road, Wayne, PA 19087',
   'visit.parking': '可停放在威尔逊农场公园（Wilson Farm Park）停车场。',
   'visit.stage': '演出在中央舞台举行。',
   'visit.dayH': '活动当天',
@@ -95,7 +95,7 @@ window.VOA_ZH = {
 
   // footer
   'foot.l1': '威尔逊农场公园 · 2026年10月10日下午 2–5 点 · 免费 · 适合所有年龄',
-  'foot.l2': '如有疑问？<a href="mailto:info@capate.org">info@capate.org</a> · 与 <a href="https://capate.org/">CAPA-TE</a> 合作举办',
+  'foot.l2': '如有疑问？<a href="mailto:event@capate.org">event@capate.org</a> · 与 <a href="https://capate.org/">CAPA-TE</a> 合作举办',
 
   // donate page
   'donate.eyebrow': '支持音乐会',
@@ -120,7 +120,7 @@ window.VOA_ZH = {
   'sp.mpl': '一家服务费城地区客户的人身伤害律师事务所。',
   'sp.visit': '访问网站',
   'become.h': '成为合作伙伴',
-  'become.p': '有意与《秋之声》合作？请通过 <a href="mailto:info@capate.org">info@capate.org</a> 联系我们，我们将很乐意为您介绍合作方式。',
+  'become.p': '有意与《秋之声》合作？请通过 <a href="mailto:event@capate.org">event@capate.org</a> 联系我们，我们将很乐意为您介绍合作方式。',
 
   // partner popup
   'pop.h': '成为《秋之声》合作伙伴',

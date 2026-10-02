@@ -15,21 +15,24 @@ js/main.js      Language toggle, mobile menu, partner logos, partner popup
 images/         Photos, poster, logos, QR code
 ```
 
-## Putting it on capate.org
+## Publishing at concert.capate.org (Bluehost)
 
-Every link and image path is relative, so the folder works under any address.
+The site lives at **https://concert.capate.org**, the "AutumnConcert" site in CAPA-TE's Bluehost account.
 
-1. Upload everything **except** `README.md` and `.git` into a folder named `voices-of-autumn` on the web host. Use the host's file manager, FTP/SFTP, or a WordPress file-manager plugin.
-2. Open `https://capate.org/voices-of-autumn/` to check it.
-3. Add a "Voices of Autumn" item to the CAPA-TE site menu that links to that address.
+1. In Bluehost, go to **Websites**. On the **AutumnConcert** row, click **File Manager**. This opens that site's folder.
+2. Download a backup of anything already there, then delete it. That's probably an old `index.html`.
+3. Upload a zip of the site files, where `index.html`, `donate.html`, `partners.html`, `css/`, `js/` and `images/` sit at the top level of the zip. Leave out `README.md` and `.git`.
+4. Right-click the zip and choose **Extract** into the same folder. Then delete the zip.
+5. Open https://concert.capate.org and hard-refresh (Ctrl+Shift+R).
+6. In the capate.org WordPress admin, add a **Custom Link** to `https://concert.capate.org` in the menu (Appearance → Menus).
 
-If you use a different folder name or domain, update the `og:image` address in the `<head>` of the three HTML pages. It is the image Facebook and similar apps show when someone shares the link.
+To update the site later, repeat steps 3–5. Extracting overwrites the old files.
 
-**If capate.org can't host uploaded files** (e.g. Wix or Squarespace), publish this repository with GitHub Pages instead: *Settings → Pages → Deploy from branch*. Then point the CAPA-TE menu item at that address.
+Every link and image path is relative, so the files also work in any folder or on any other host. If the address changes, update the `og:image` address in the `<head>` of the three HTML pages. It is the image Facebook and similar apps show when someone shares the link.
 
 ## Sharing in Chinese
 
-Add `?lang=zh` to any link to open it in Chinese, e.g. `https://capate.org/voices-of-autumn/?lang=zh` for WeChat. Visitors can switch with the 中文 / English button, and their choice is remembered.
+Add `?lang=zh` to any link to open it in Chinese, e.g. `https://concert.capate.org/?lang=zh` for WeChat. Visitors can switch with the 中文 / English button, and their choice is remembered.
 
 ## Editing
 

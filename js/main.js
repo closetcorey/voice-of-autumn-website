@@ -142,30 +142,25 @@
     if (e.target.closest('[data-lang-toggle]')) setLang(current === 'zh' ? 'en' : 'zh');
   });
 
-  /* ---------- mobile menu ---------- */
-  function initMenu() {
-    var nav = document.querySelector('.site-nav');
-    var btn = nav && nav.querySelector('.menu-btn');
-    if (!btn) return;
-    function set(open) {
-      nav.classList.toggle('open', open);
-      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  /* ---------- tab row: fade the right edge while more tabs are off-screen (phones) ---------- */
+  function initTabs() {
+    var row = document.querySelector('.nav-links');
+    if (!row) return;
+    function update() {
+      var scrolls = row.scrollWidth > row.clientWidth + 1;
+      row.classList.toggle('scrolls', scrolls);
+      row.classList.toggle('at-end', !scrolls || row.scrollLeft + row.clientWidth >= row.scrollWidth - 2);
     }
-    btn.addEventListener('click', function () { set(!nav.classList.contains('open')); });
-    nav.querySelectorAll('.nav-links a').forEach(function (a) {
-      a.addEventListener('click', function () { set(false); });
-    });
-    document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape' && nav.classList.contains('open')) { set(false); btn.focus(); }
-    });
-    document.addEventListener('click', function (e) {
-      if (nav.classList.contains('open') && !nav.contains(e.target)) set(false);
-    });
+    row.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update);
+    document.addEventListener('voa:lang', update);
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(update);
+    update();
   }
 
   buildPopup();
   fillStrips();
-  initMenu();
+  initTabs();
   apply(initialLang());
   showPopup();
 })();

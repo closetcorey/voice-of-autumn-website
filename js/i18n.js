@@ -12,12 +12,11 @@ window.VOA_ZH = {
   'skip': '跳到正文',
   'brand': '秋之声',
   'nav.home': '首页',
-  'nav.choir': '认识合唱团',
+  'nav.choir': '<span class="nav-long">认识</span>合唱团',
   'nav.schedule': '节目单',
   'nav.visit': '到场指南',
   'nav.partners': '合作伙伴',
   'nav.donate': '捐款',
-  'nav.menu': '菜单',
 
   // hero
   'hero.eyebrow': 'CAPA-TE 呈献',

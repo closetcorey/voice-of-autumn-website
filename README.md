@@ -42,7 +42,7 @@ Add `?lang=zh` to any link to open it in Chinese, e.g. `https://concert.capate.o
 | Chinese text | `js/i18n.js`: find the key used by the element's `data-i18n` attribute |
 | Songs, performers, order | `PROGRAM` in `js/program.js` |
 | Choir/band/crew lists | `ROSTER` in `js/program.js` (`NAMES` holds English spellings of Chinese names) |
-| Partners | the tier sections in `partners.html` **and** the `PARTNERS` list in `js/main.js` (logo strip + popup) |
+| Partners | the tier sections in `partners.html` **and** the `PARTNERS` list in `js/main.js` (logo strip + popup; add `popup: false` to keep a logo out of the popup) |
 | Donation link | the `Donate now` button in `donate.html` |
 | Hero photo | replace `images/hero-autumn.jpg` (a wider, higher-resolution photo, ~1600×800, will look sharper) |
 

@@ -9,13 +9,14 @@
 
   // Partner logos shown on the home page and in the popup.
   // When partners change, update this list and partners.html.
+  // popup: false keeps a logo out of the popup (Community Friends tier).
   var PARTNERS = [
     { name: 'TransGlobal', logo: 'images/partners/transglobal.png', w: 460, h: 190 },
     { name: 'Tredyffrin Republicans', logo: 'images/partners/tredyffrin-republicans.png', w: 460, h: 454 },
     { name: 'MyPhillyLawyer', logo: 'images/partners/myphillylawyer.jpg', w: 460, h: 127 },
     { name: 'CHUMS', logo: 'images/partners/chums.jpg', w: 360, h: 353 },
-    { name: 'Kabuki Japanese Steakhouse', logo: 'images/partners/kabuki.png', w: 420, h: 112 },
-    { name: 'A Plus Dental Care', logo: 'images/partners/aplus-dental.jpg', w: 420, h: 374 }
+    { name: 'Kabuki Japanese Steakhouse', logo: 'images/partners/kabuki.png', w: 420, h: 112, popup: false },
+    { name: 'A Plus Dental Care', logo: 'images/partners/aplus-dental.jpg', w: 420, h: 374, popup: false }
   ];
 
   function storage(type) {
@@ -29,11 +30,13 @@
 
   /* ---------- partner logo strips ---------- */
   function fillStrips() {
-    var html = PARTNERS.map(function (p) {
-      return '<a class="strip-logo" href="partners.html" title="' + p.name + '">' +
-        '<img src="' + p.logo + '" alt="' + p.name + '" width="' + p.w + '" height="' + p.h + '" loading="lazy"></a>';
-    }).join('');
-    document.querySelectorAll('[data-partner-strip]').forEach(function (box) { box.innerHTML = html; });
+    document.querySelectorAll('[data-partner-strip]').forEach(function (box) {
+      var inPopup = !!box.closest('dialog');
+      box.innerHTML = PARTNERS.filter(function (p) { return !inPopup || p.popup !== false; }).map(function (p) {
+        return '<a class="strip-logo" href="partners.html" title="' + p.name + '">' +
+          '<img src="' + p.logo + '" alt="' + p.name + '" width="' + p.w + '" height="' + p.h + '" loading="lazy"></a>';
+      }).join('');
+    });
   }
 
   /* ---------- partner popup (once per browser session, not on the partners page) ---------- */

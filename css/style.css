@@ -435,6 +435,15 @@ html[lang^="zh"] .t-serif { font-size: clamp(2rem, 7vw, 4.2rem); letter-spacing:
 .sp-logo img { max-height: 150px; width: auto; object-fit: contain; }
 .sp h3 { font-size: clamp(1.35rem, 3vw, 1.65rem); margin-bottom: .4rem; }
 .sp p { color: var(--ink-soft); }
+/* wide two-brand logo: logo banner on top, text below */
+.sp-wide { grid-template-columns: 1fr; }
+.sp-wide .sp-logo { min-height: 0; padding: clamp(1rem, 3vw, 1.6rem); }
+.sp-wide .sp-logo img { width: 100%; max-width: 760px; max-height: none; }
+.tier-silver .sp {
+  background: linear-gradient(135deg, #eef0f3, var(--card) 60%);
+  border-color: #c9ced4; box-shadow: 8px 8px 0 #c9ced4;
+}
+.tier-silver .logo-grid { margin-top: 1.6rem; }
 .ext { display: inline-flex; align-items: center; gap: .35rem; font-weight: 700; }
 .ext svg { width: 16px; height: 16px; }
 .logo-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1rem; }

@@ -14,6 +14,8 @@
     { name: 'TransGlobal', logo: 'images/partners/transglobal.png', w: 460, h: 190 },
     { name: 'Tredyffrin Republicans', logo: 'images/partners/tredyffrin-republicans.png', w: 460, h: 454 },
     { name: 'MyPhillyLawyer', logo: 'images/partners/myphillylawyer.jpg', w: 460, h: 127 },
+    { name: 'Auchel World', logo: 'images/partners/auchel-world.png', w: 460, h: 220 },
+    { name: 'Asian Plate', logo: 'images/partners/asian-plate.jpg', w: 440, h: 438 },
     { name: 'CHUMS', logo: 'images/partners/chums.jpg', w: 360, h: 353 },
     { name: 'Kabuki Japanese Steakhouse', logo: 'images/partners/kabuki.png', w: 420, h: 112, popup: false },
     { name: 'A Plus Dental Care', logo: 'images/partners/aplus-dental.jpg', w: 420, h: 374, popup: false }

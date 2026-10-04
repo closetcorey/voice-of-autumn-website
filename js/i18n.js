@@ -121,6 +121,8 @@ window.VOA_ZH = {
   'sp.coconut': '新鲜椰子甜品与糖水——选用真正的椰子手工制作，每日在宾州 Berwyn 新鲜现做。',
   'sp.asianplate': 'Asian Plate 是位于 Berwyn（254 Swedesford Rd）的亚洲餐厅，在温馨舒适的环境中呈现地道的亚洲风味。招牌小笼包、生煎包、肉夹馍和香脆春卷均选用新鲜食材，按传统做法用心制作。',
   'sp.visit': '访问网站',
+  'sp.order': '在线点餐',
+  'sp.chums': 'CHUMS Poke & Skewer 位于 Berwyn（254 Swedesford Rd），主打新鲜、可自选搭配的波奇饭（poke bowl）和地道的中式烤串——羊肉串、牛肉串、鱿鱼串应有尽有，还有章鱼小丸子、寿司等人气美食。每一口都是满满的快乐！',
   'become.h': '成为合作伙伴',
   'become.p': '有意与《秋之声》合作？请通过 <a href="mailto:event@capate.org">event@capate.org</a> 联系我们，我们将很乐意为您介绍合作方式。',
 

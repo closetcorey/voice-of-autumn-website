@@ -65,6 +65,8 @@ window.VOA_ZH = {
   'img.group': '费城老炮男声合唱团全体团员身着深色西装，在户外砖墙旁合影',
   'img.stage': '费城老炮乐队在舞台上演出，有吉他、键盘和麦克风',
   'choir.credit': '舞台演出。摄影：Rob L Photography',
+  'perf.h': 'TE 学生表演者',
+  'perf.p': '音乐会由 Tredyffrin-Easttown 学区的学生开场演出。',
   'roster.h': '合唱团、乐队与制作团队',
 
   // visit

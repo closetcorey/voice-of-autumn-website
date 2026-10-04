@@ -40,16 +40,20 @@
 
   var PROGRAM = [
     { part: ['TE Student Opening Performance', 'TE 学生开场表演'], opening: true, items: [
-      { title: ['Classic Songs Medley (guitar)', '经典乐曲串烧（吉他）'], credits: [
-        ['played', ['Derek Zhao (13 yrs)', 'Derek Zhao（13岁）']]],
-        photo: { src: 'images/performers/derek-zhao.jpg', alt: ['Derek Zhao', 'Derek Zhao'] } },
-      { title: ['Friedrich Seitz: Student Concerto No. 2 in G Major (violin solo)', 'Friedrich Seitz：G大调第2号学生协奏曲（小提琴独奏）'], credits: [
-        ['played', ['Ethan Lin (10 yrs)', 'Ethan Lin（10岁）']]],
-        photo: { src: 'images/performers/ethan-lin.jpg', alt: ['Ethan Lin playing the violin', 'Ethan Lin 演奏小提琴'] } },
       { title: ['Johnny B Goodie & Forgetting Things (original)', 'Johnny B Goodie & Forgetting Things（原创）'], credits: [
         ['vocals', ["Andrew Sun (10 yrs), Tigue Berkobin (9 yrs), Tigue's Dad", 'Andrew Sun（10岁）、Tigue Berkobin（9岁）、Tigue 的爸爸']],
         ['accomp', ['Electric guitar & drums', '电吉他和鼓']]],
-        photo: { src: 'images/performers/rabberband.jpg', alt: ["Rabberband: Andrew Sun, Tigue Berkobin and Tigue's Dad on drums, bass and guitar", 'Rabberband 乐队：Andrew Sun、Tigue Berkobin 和 Tigue 的爸爸（鼓、贝斯、吉他）'] } }
+        performer: { photo: 'images/performers/rabberband.jpg', name: ['Rabberband', 'Rabberband 乐队'],
+          who: ["Andrew Sun (10 yrs), Tigue Berkobin (9 yrs) & Tigue's Dad", 'Andrew Sun（10岁）、Tigue Berkobin（9岁）和 Tigue 的爸爸'],
+          alt: ["Rabberband: Andrew Sun, Tigue Berkobin and Tigue's Dad on drums, bass and guitar", 'Rabberband 乐队：Andrew Sun、Tigue Berkobin 和 Tigue 的爸爸（鼓、贝斯、吉他）'] } },
+      { title: ['Friedrich Seitz: Student Concerto No. 2 in G Major (violin solo)', 'Friedrich Seitz：G大调第2号学生协奏曲（小提琴独奏）'], credits: [
+        ['played', ['Ethan Lin (10 yrs)', 'Ethan Lin（10岁）']]],
+        performer: { photo: 'images/performers/ethan-lin.jpg', name: ['Ethan Lin', 'Ethan Lin'],
+          who: ['Violin · 10 yrs', '小提琴 · 10岁'], alt: ['Ethan Lin playing the violin', 'Ethan Lin 演奏小提琴'] } },
+      { title: ['Classic Songs Medley (guitar)', '经典乐曲串烧（吉他）'], credits: [
+        ['played', ['Derek Zhao (13 yrs)', 'Derek Zhao（13岁）']]],
+        performer: { photo: 'images/performers/derek-zhao.jpg', name: ['Derek Zhao', 'Derek Zhao'],
+          who: ['Guitar · 13 yrs', '吉他 · 13岁'], alt: ['Derek Zhao', 'Derek Zhao'] } }
     ] },
     { part: ['First half', '上半场'], items: [
       { title: ['Setting Off', '《启程》'], credits: [['vocals', '蔡纳新,王建国'], ['harmony', '陈亚和,蒋平'], ['accomp', BAND]] },
@@ -125,7 +129,8 @@
     var sep = i ? '：' : ': ';
     var prog = document.getElementById('program');
     var roster = document.getElementById('roster');
-    if (!prog && !roster) return;
+    var performers = document.getElementById('performers');
+    if (!prog && !roster && !performers) return;
 
     if (prog) {
       var n = 0;
@@ -140,11 +145,20 @@
           var credits = it.credits.map(function (c) {
             return '<p class="meta"><span class="lbl">' + LABELS[c[0]][i] + sep + '</span>' + names(c[1], i) + '</p>';
           }).join('');
-          var photo = it.photo ? '<img class="prog-photo" src="' + it.photo.src + '" width="600" height="600" loading="lazy" alt="' + esc(it.photo.alt[i]).replace(/"/g, '&quot;') + '">' : '';
-          return '<li class="prog-item' + (it.photo ? ' has-photo' : '') + '">' + badge + '<div><h4>' + esc(it.title[i]) + '</h4>' + credits + '</div>' + photo + '</li>';
+          return '<li class="prog-item">' + badge + '<div><h4>' + esc(it.title[i]) + '</h4>' + credits + '</div></li>';
         }).join('');
         return '<div class="prog-part' + (block.opening ? ' opening' : '') + '"><h3 class="prog-head">' + esc(block.part[i]) + '</h3>' +
           '<' + tag + ' class="prog-list"' + start + '>' + items + '</' + tag + '></div>';
+      }).join('');
+    }
+
+    // Student performer cards (photos) below the choir introduction, in running order
+    if (performers) {
+      performers.innerHTML = PROGRAM.filter(function (b) { return b.opening; })[0].items.map(function (it) {
+        var p = it.performer;
+        return '<article class="performer"><img src="' + p.photo + '" width="600" height="600" loading="lazy" alt="' + esc(p.alt[i]).replace(/"/g, '&quot;') + '">' +
+          '<div class="performer-body"><h4>' + esc(p.name[i]) + '</h4><p class="meta">' + esc(p.who[i]) + '</p>' +
+          '<p class="performer-piece">♪ ' + esc(it.title[i]) + '</p></div></article>';
       }).join('');
     }
 

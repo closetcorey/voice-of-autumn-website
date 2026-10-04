@@ -14,7 +14,7 @@
     { name: 'TransGlobal', logo: 'images/partners/transglobal.png', w: 460, h: 190 },
     { name: 'Tredyffrin Republicans', logo: 'images/partners/tredyffrin-republicans.png', w: 460, h: 454 },
     { name: 'MyPhillyLawyer', logo: 'images/partners/myphillylawyer.jpg', w: 460, h: 127 },
-    { name: 'Auchel World', logo: 'images/partners/auchel-world.png', w: 460, h: 220 },
+    { name: 'Auchel World / Grand Prospects Financial & Insurance Services', logo: 'images/partners/auchel-gpfs.jpg', w: 600, h: 431 },
     { name: 'Asian Plate', logo: 'images/partners/asian-plate.jpg', w: 440, h: 438 },
     { name: 'All About Coconut', logo: 'images/partners/all-about-coconut.png', w: 440, h: 379 },
     { name: 'CHUMS Poke & Skewer', logo: 'images/partners/chums.jpg', w: 360, h: 353 },

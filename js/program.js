@@ -15,6 +15,8 @@
     '老枪': 'Lao Qiang', '劳乐生': 'Lesheng Lao', '王蕊': 'Rui Wang',
     '杨劲松': 'Jinsong Yang', '钱练': 'Lian Qian', '温迪': 'Di Wen', '张莹': 'Ying Zhang',
     '刘耀斌': 'Yaobin Liu', '李欣源': 'Xinyuan Li', '秦朴': 'Pu Qin',
+    '彭腾': 'Teng Peng', '汪丹丹': 'Dandan Wang', '宗嫒': 'Ai Zong', '李建伟': 'Jianwei Li',
+    '方圆': 'Yuan Fang', '张红丁': 'Hongding Zhang', '佳音': 'Jiayin', '祖文红': 'Wenhong Zu',
     '老炮合唱团': 'Philadelphia Old Boys Choir',
     '老炮小乐队': 'Old Boys Mini Band',
     '鹏飞音乐室小乐队': 'Pengfei Music Studio Band'
@@ -27,10 +29,13 @@
 
   var LABELS = {
     vocals: ['Vocals', '演唱'],
+    guestVocals: ['Guest vocals', '演唱（嘉宾）'],
+    choirVocals: ['Choir vocals', '演唱（老炮）'],
+    echoVocals: ['Guest vocals (Echo Music Group)', '演唱（嘉宾）Echo（回声）声乐组合'],
     played: ['Performed by', '演奏'],
     harmony: ['Harmony', '和声'],
-    accomp: ['Accompaniment', '伴奏'],
-    piano: ['Piano', '钢琴伴奏']
+    conductor: ['Conductor', '指挥'],
+    accomp: ['Accompaniment', '伴奏']
   };
 
   var PROGRAM = [
@@ -45,25 +50,27 @@
     ] },
     { part: ['First half', '上半场'], items: [
       { title: ['Setting Off', '《启程》'], credits: [['vocals', '蔡纳新,王建国'], ['harmony', '陈亚和,蒋平'], ['accomp', BAND]] },
-      { title: ['You, My Desk Mate', '《同桌的你》'], credits: [['vocals', CHOIR], ['accomp', BAND]] },
-      { title: ['Shaolin, Shaolin', '《少林，少林》'], credits: [['vocals', CHOIR], ['accomp', ['John Zhang (accordion)', 'John Zhang（手风琴）']]] },
-      { title: ['Songs of Teresa Teng', '《邓丽君的歌》'], credits: [['vocals', ['Meggie Cao (guest)', 'Meggie Cao（嘉宾）']], ['accomp', '鹏飞音乐室小乐队']] },
+      { title: ['You, My Desk Mate', '《同桌的你》'], credits: [['vocals', CHOIR], ['conductor', '余晓明'], ['accomp', BAND]] },
+      { title: ['Shaolin, Shaolin', '《少林，少林》'], credits: [['vocals', CHOIR], ['conductor', '余晓明'], ['accomp', ['John Zhang (accordion)', 'John Zhang（手风琴）']]] },
+      { title: ['Songs of Teresa Teng', '《邓丽君的歌》'], credits: [['vocals', ['Maggie (guest, lead vocals)', '（嘉宾）Maggie（主唱）']], ['accomp', '鹏飞音乐室小乐队']] },
       { title: ['Take Me Home, Country Roads', '《Take Me Home, Country Roads》'], credits: [['vocals', '蔡纳新,王建国,冯皓,陈亚和,杨氢,Paul Li,何雪炀,张博,张春瀛'], ['accomp', BAND]] },
       { title: ['Autumn Cicada', '《秋蝉》'], credits: [['vocals', SIX], ['accomp', BAND]] },
       { title: ['Smoke Rising Again', '《又见炊烟》'], credits: [['vocals', SIX], ['accomp', BAND]] },
       { title: ['Xihai Love Song', '《西海情歌》'], credits: [['vocals', '何雪炀'], ['accomp', BAND]] },
-      { title: ['Daylily', '《萱草花》'], credits: [['vocals', ['Choir family members (guests), choir members', '老炮家属（嘉宾）、老炮团员']], ['accomp', BAND]] }
+      { title: ['Daylily', '《萱草花》'], credits: [
+        ['guestVocals', '彭腾,汪丹丹,宗嫒,李建伟,方圆,张红丁,佳音,王蕊,祖文红'],
+        ['choirVocals', '何雪炀,王建国,冯皓,陈亚和,Paul Li,徐晓天,杨氢,余波'],
+        ['accomp', BAND]] }
     ] },
     { interval: ['Intermission: Lucky Draw', '中场休息（幸运抽奖）'] },
     { part: ['Second half', '下半场'], items: [
+      { title: ['The Sound of Silence / Ordinary Road', '《Sound of Silence》《平凡之路》'], credits: [['echoVocals', '杨劲松,钱练,温迪,张莹,刘耀斌,李欣源,秦朴'], ['accomp', MP3]] },
       { title: ['Bon Voyage', '《祝你一路顺风》'], credits: [['vocals', '蔡纳新'], ['accomp', BAND]] },
       { title: ['Late', '《迟到》'], credits: [['vocals', '蔡纳新,王建国'], ['accomp', BAND]] },
       { title: ['The Story of Time', '《光阴的故事》'], credits: [['vocals', '王建国,冯皓,蔡纳新'], ['accomp', BAND]] },
       { title: ['Ah, Friend, Farewell!', '《啊，朋友，再见！》'], credits: [['vocals', SIX], ['accomp', BAND]] },
       { title: ['The Maple Leaves Turn Red', '《枫叶红了》'], credits: [['vocals', '蔡纳新,王建国,何雪炀,冯皓,陈亚和'], ['accomp', BAND]] },
-      { title: ['The Sound of Silence / Ordinary Road', '《Sound of Silence》《平凡之路》'], credits: [['vocals', ['Echo Music Group (guests)', 'Echo（回声）声乐组合（嘉宾）']], ['accomp', MP3]] },
-      { title: ['You Raise Me Up', '《You Raise Me Up》'], credits: [['vocals', '杨氢,蔡纳新,蒋平,王建国,郑志桐,张春瀛,Paul Li,张博'], ['accomp', MP3]] },
-      { title: ['Hunters’ Chorus', '《猎人合唱》'], credits: [['vocals', CHOIR], ['piano', 'Grace']] }
+      { title: ['You Raise Me Up', '《You Raise Me Up》'], credits: [['vocals', '杨氢,蔡纳新,蒋平,王建国,郑志桐,张春瀛,Paul Li,张博'], ['accomp', MP3]] }
     ] }
   ];
 

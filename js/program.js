@@ -54,7 +54,7 @@
       { title: ['Xihai Love Song', '《西海情歌》'], credits: [['vocals', '何雪炀'], ['accomp', BAND]] },
       { title: ['Daylily', '《萱草花》'], credits: [['vocals', ['Choir family members (guests), choir members', '老炮家属（嘉宾）、老炮团员']], ['accomp', BAND]] }
     ] },
-    { interval: ['Intermission: lucky draw', '中场休息（幸运抽奖）'] },
+    { interval: ['Intermission: Lucky Draw', '中场休息（幸运抽奖）'] },
     { part: ['Second half', '下半场'], items: [
       { title: ['Bon Voyage', '《祝你一路顺风》'], credits: [['vocals', '蔡纳新'], ['accomp', BAND]] },
       { title: ['Late', '《迟到》'], credits: [['vocals', '蔡纳新,王建国'], ['accomp', BAND]] },

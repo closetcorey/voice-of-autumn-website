@@ -15,12 +15,14 @@
     { name: 'Tredyffrin Republicans', logo: 'images/partners/tredyffrin-republicans.png', w: 460, h: 454 },
     { name: 'MyPhillyLawyer', logo: 'images/partners/myphillylawyer.jpg', w: 460, h: 127 },
     { name: 'Auchel World / Grand Prospects Financial & Insurance Services', logo: 'images/partners/auchel-gpfs.jpg', w: 600, h: 431 },
+    { name: 'PathFinder Education', logo: 'images/partners/pathfinder.png', w: 200, h: 173 },
     { name: 'Asian Plate', logo: 'images/partners/asian-plate.jpg', w: 440, h: 438 },
     { name: 'All About Coconut', logo: 'images/partners/all-about-coconut.png', w: 440, h: 379 },
     { name: 'CHUMS Poke & Skewer', logo: 'images/partners/chums.jpg', w: 360, h: 353 },
     { name: 'Kabuki Japanese Steakhouse', logo: 'images/partners/kabuki.png', w: 420, h: 112 },
     { name: 'O-CHA', text: 'O-CHA' }, // no logo yet: shows the name as a text tile
-    { name: 'A Plus Dental Care', logo: 'images/partners/aplus-dental.jpg', w: 420, h: 374, popup: false }
+    { name: 'A Plus Dental Care', logo: 'images/partners/aplus-dental.jpg', w: 420, h: 374, popup: false },
+    { name: 'UNIPRO 优普云锐', logo: 'images/partners/unipro.png', w: 478, h: 134, popup: false }
   ];
 
   function storage(type) {

@@ -126,6 +126,8 @@ window.VOA_ZH = {
   'img.posterMpl': 'MyPhillyLawyer 赞助海报：费城喜爱的人身伤害律师，业务范围，免费咨询，提供中文沟通支持',
   'img.posterAuchel': '美国奥淇国际金融与美国宏盛保险与理财赞助海报',
   'img.posterCoconut': 'All About Coconut 赞助海报：椰子甜品，椰子罐、椰子碗、椰子饮品和糖水',
+  'img.posterKabuki': 'Kabuki 日式铁板烧餐厅赞助海报：欢迎光临！铁板烧、寿司和生鱼片、主厨特色卷、照烧、天妇罗、面条和炒饭',
+  'img.posterOcha': 'O-CHA 茶饮店赞助海报：新鲜冲泡，口感均衡，每一杯都令人满足。手作奶茶、水果茶、黑糖珍珠、抹茶拿铁、冰茶和冰沙',
   'sp.kabuki': 'Kabuki 日式铁板烧餐厅提供在您面前现场烹制的铁板烧，以及新鲜的寿司、生鱼片和各式特色卷。',
   'sp.ocha': 'O-CHA 是一家现代茶饮店，位于 Berwyn 的 Hung Vuong Market 亚洲美食广场（254 Swedesford Rd 二楼）。饮品以亚洲茶文化为灵感并融入现代创意，每一杯都现点现做，选用优质茶叶、新鲜水果和精选配料——从黑糖珍珠、抹茶拿铁到水果茶和奶茶，甜度和冰量都可随心调整。',
   'sp.asianplate': 'Asian Plate 是位于 Berwyn（254 Swedesford Rd）的亚洲餐厅，在温馨舒适的环境中呈现地道的亚洲风味。招牌小笼包、生煎包、肉夹馍和香脆春卷均选用新鲜食材，按传统做法用心制作。',

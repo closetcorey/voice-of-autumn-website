@@ -123,6 +123,8 @@ window.VOA_ZH = {
   'sp.coconut': '新鲜椰子甜品与糖水——选用真正的椰子手工制作，每日在宾州 Berwyn 新鲜现做。',
   'img.posterMain': '《秋之声》海报：CAPA-TE 呈献免费社区音乐会，10月10日（星期六）下午 2:00–5:00，威尔逊农场公园，费城老炮男声合唱团演出，附活动信息和捐款二维码以及赞助商标志',
   'img.posterTransglobal': '美国泛宇集团赞助海报：一站式财富管理权威。退休规划讲座「从资产配置到现金流配置，退休规划关键转折」，2026年10月24日（星期六）上午10:00（美东时间），费城办公室（640 Freedom Business Center Dr., STE 100, King of Prussia），主讲人 Eason Yang（EA，助理区域副总裁）。保险、退休、财富管理、税务、房地产、贷款。电话 626-447-7888 转 2154',
+  'img.posterAsianPlate': 'Asian Plate 赞助海报：饺子与包子。感谢您支持本地商家！刈包、韩式烤肉饭、新鲜饺子、小笼包、肉夹馍和生煎包',
+  'img.posterChums': 'CHUMS Poke & Skewer 赞助海报：每一口都是快乐。波奇饭、烤串和寿司卷',
   'img.posterTtgop': 'Tredyffrin Republicans 赞助海报：您身边的邻居，服务 Tredyffrin 社区。详情请访问 ttgop.org',
   'img.posterMpl': 'MyPhillyLawyer 赞助海报：费城喜爱的人身伤害律师，业务范围，免费咨询，提供中文沟通支持',
   'img.posterAuchel': '美国奥淇国际金融与美国宏盛保险与理财赞助海报',

@@ -512,3 +512,6 @@ a.logo-tile:hover { border-color: var(--maple); }
 .sp-poster a { display: block; cursor: zoom-in; }
 .sp-poster img { width: 100%; border-radius: 12px; border: 4px solid #fff; box-shadow: 0 8px 20px rgba(31, 59, 42, .15); transition: transform .2s ease; }
 .sp-poster a:hover img { transform: scale(1.01); }
+/* cards with more than one flyer */
+.sp-posters { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; width: 100%; margin-top: .4rem; }
+.sp-posters .sp-poster { grid-column: auto; max-width: none; margin: 0; }

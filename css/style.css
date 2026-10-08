@@ -395,11 +395,18 @@ html[lang^="zh"] .t-serif { font-size: clamp(2rem, 7vw, 4.2rem); letter-spacing:
   display: grid; place-items: center; width: 132px; height: 76px; padding: .5rem .7rem;
   background: #fff; border: 1px solid var(--line); border-radius: 10px;
   transition: transform .15s ease, box-shadow .15s ease;
+  text-decoration: none;
 }
 .strip-logo:hover { transform: translateY(-2px); box-shadow: 0 6px 14px rgba(31, 59, 42, .12); }
 .strip-logo img { max-width: 100%; max-height: 58px; width: auto; height: auto; object-fit: contain; }
-.partner-strip.compact .strip-logo { width: 104px; height: 60px; padding: .4rem .5rem; }
-.partner-strip.compact .strip-logo img { max-height: 44px; }
+.partner-strip.compact { gap: .5rem; }
+.partner-strip.compact .strip-logo { width: 88px; height: 54px; padding: .35rem .4rem; }
+.partner-strip.compact .strip-logo img { max-height: 40px; }
+/* sponsors without a logo yet: show the name as a wordmark */
+.strip-word { font: 900 1.35rem/1 var(--f-display); letter-spacing: .04em; color: #3d6b3a; }
+.partner-strip.compact .strip-word { font-size: 1rem; }
+.sp-logo-text { text-decoration: none; }
+.sp-logo-text span { font: 900 clamp(2.4rem, 5vw, 3.2rem)/1 var(--f-display); letter-spacing: .05em; color: #3d6b3a; }
 
 /* ---------- donate ---------- */
 .donate-card { text-align: center; }

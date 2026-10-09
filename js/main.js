@@ -20,9 +20,9 @@
     { name: 'All About Coconut', logo: 'images/partners/all-about-coconut.png', w: 440, h: 379 },
     { name: 'CHUMS Poke & Skewer', logo: 'images/partners/chums.jpg', w: 360, h: 353 },
     { name: 'Kabuki Japanese Steakhouse', logo: 'images/partners/kabuki.png', w: 420, h: 112 },
-    { name: 'O-CHA', text: 'O-CHA' }, // no logo yet: shows the name as a text tile
-    { name: 'A Plus Dental Care', logo: 'images/partners/aplus-dental.jpg', w: 420, h: 374, popup: false },
-    { name: 'UNIPRO 优普云锐', logo: 'images/partners/unipro.png', w: 478, h: 134, popup: false }
+    { name: 'O-CHA', logo: 'images/partners/ocha.png', w: 600, h: 180 },
+    { name: 'UNIPRO 优普云锐', logo: 'images/partners/unipro.png', w: 480, h: 133 },
+    { name: 'A Plus Dental Care', logo: 'images/partners/aplus-dental.jpg', w: 420, h: 374, popup: false }
   ];
 
   function storage(type) {
@@ -39,10 +39,8 @@
     document.querySelectorAll('[data-partner-strip]').forEach(function (box) {
       var inPopup = !!box.closest('dialog');
       box.innerHTML = PARTNERS.filter(function (p) { return !inPopup || p.popup !== false; }).map(function (p) {
-        var inner = p.logo
-          ? '<img src="' + p.logo + '" alt="' + p.name + '" width="' + p.w + '" height="' + p.h + '" loading="lazy">'
-          : '<span class="strip-word">' + p.text + '</span>';
-        return '<a class="strip-logo" href="partners.html" title="' + p.name + '">' + inner + '</a>';
+        return '<a class="strip-logo" href="partners.html" title="' + p.name + '">' +
+          '<img src="' + p.logo + '" alt="' + p.name + '" width="' + p.w + '" height="' + p.h + '" loading="lazy"></a>';
       }).join('');
     });
   }

@@ -402,11 +402,12 @@ html[lang^="zh"] .t-serif { font-size: clamp(2rem, 7vw, 4.2rem); letter-spacing:
 .partner-strip.compact { gap: .5rem; }
 .partner-strip.compact .strip-logo { width: 88px; height: 54px; padding: .35rem .4rem; }
 .partner-strip.compact .strip-logo img { max-height: 40px; }
-/* sponsors without a logo yet: show the name as a wordmark */
-.strip-word { font: 900 1.35rem/1 var(--f-display); letter-spacing: .04em; color: #8a5cc2; }
-.partner-strip.compact .strip-word { font-size: 1rem; }
-.sp-logo-text { text-decoration: none; }
-.sp-logo-text span { font: 900 clamp(2.4rem, 5vw, 3.2rem)/1 var(--f-display); letter-spacing: .05em; color: #8a5cc2; }
+@media (max-width: 480px) {
+  .partner-strip.compact { gap: .45rem; margin: 1rem 0 1.2rem; }
+  .partner-strip.compact .strip-logo { width: 64px; height: 44px; padding: .25rem; border-radius: 8px; }
+  .partner-strip.compact .strip-logo img { max-height: 34px; }
+  .popup-box { padding-top: 3.6rem; }
+}
 
 /* ---------- donate ---------- */
 .donate-card { text-align: center; }
@@ -448,6 +449,7 @@ html[lang^="zh"] .t-serif { font-size: clamp(2rem, 7vw, 4.2rem); letter-spacing:
 }
 .ext { display: inline-flex; align-items: center; gap: .35rem; font-weight: 700; }
 .ext svg { width: 16px; height: 16px; }
+.sp-links { display: flex; flex-wrap: wrap; gap: .4rem 1.4rem; margin: 0; }
 .logo-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1rem; }
 .logo-tile {
   display: grid; place-items: center; min-height: 190px; padding: 1rem;

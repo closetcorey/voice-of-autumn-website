@@ -1,0 +1,4 @@
+# Voices of Autumn (concert.capate.org)
+# Serve index.html as the home page so https://concert.capate.org/ opens the site
+# instead of a "403 Forbidden" error.
+DirectoryIndex index.html

@@ -30,6 +30,14 @@ To update the site later, repeat steps 3–5. Extracting overwrites the old file
 
 Every link and image path is relative, so the files also work in any folder or on any other host. If the address changes, update the `og:image` address in the `<head>` of the three HTML pages. It is the image Facebook and similar apps show when someone shares the link.
 
+### If the site shows "403 Forbidden"
+
+The zip includes a hidden `.htaccess` file that tells the server to open `index.html` as the home page. If you still get a 403:
+
+1. Open `https://concert.capate.org/index.html`. If that works but the bare address doesn't, the `.htaccess` file didn't upload. In File Manager, turn on **Settings → Show Hidden Files** and check that it's there.
+2. Check permissions in File Manager: the site folder needs **755**, folders inside it **755**, and files **644**.
+3. If it still fails, ask Bluehost support to check the document root and security settings (ModSecurity) for `concert.capate.org`.
+
 ## Sharing in Chinese
 
 Add `?lang=zh` to any link to open it in Chinese, e.g. `https://concert.capate.org/?lang=zh` for WeChat. Visitors can switch with the 中文 / English button, and their choice is remembered.

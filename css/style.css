@@ -508,7 +508,7 @@ a.logo-tile:hover { border-color: var(--maple); }
 @media (max-width: 560px) { .performer img { aspect-ratio: 4 / 3; } }
 
 /* sponsor posters (partners page) */
-.feature-poster { max-width: 520px; margin: 0 auto clamp(3rem, 7vw, 4.5rem); }
+.feature-poster { max-width: 760px; margin: 0 auto clamp(3rem, 7vw, 4.5rem); }
 .feature-poster img { max-width: none; transform: none; }
 .sp-poster { grid-column: 1 / -1; width: 100%; max-width: 440px; margin: .4rem auto 0; }
 .sp-poster a { display: block; cursor: zoom-in; }

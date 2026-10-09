@@ -127,7 +127,6 @@ window.VOA_ZH = {
   'img.posterChums': 'CHUMS Poke & Skewer 传单：每一口都是快乐。波奇饭、寿司卷，以及牛肉、羊肉、鸡翅、五花肉、鱿鱼、虾、香肠和各式蔬菜烤串菜单',
   'img.posterTtgopE1': '切斯特县共和党委员会 2026 年大选传单第 1 页：宾州州长与副州长、美国众议院及宾州议会选举。选举日 11 月 3 日。州长候选人 Stacy Garrity，副州长候选人 Jason Richey',
   'img.posterTtgopE2': '切斯特县共和党委员会 2026 年大选传单第 2 页：美国国会第 6 选区候选人 Marty Young，宾州众议院第 157 选区候选人 Justin Pak。截止日期：10 月 19 日选民登记，10 月 27 日申请邮寄投票，11 月 3 日邮寄选票截止。RepublicanCCC.com',
-  'img.posterTtgop': 'Tredyffrin Republicans 赞助海报：您身边的邻居，服务 Tredyffrin 社区。详情请访问 ttgop.org',
   'img.posterMpl': 'MyPhillyLawyer 传单：费城喜爱的人身伤害律师，2026 年费城最爱奖得主。免费咨询，不赢不收费，提供中文沟通支持。车辆事故、卡车事故、工伤赔偿、滑倒摔伤、医疗事故、过失致死。总机 215-227-2727，中文服务 267-512-2301，myphillylawyer.com，费城和 King of Prussia 设有办公室',
   'img.posterAuchel': '美国奥淇国际金融与美国宏盛保险与理财传单：全美最大的保险总代理商之一，代理数十家 A+ 级公司的优质产品，服务遍及全球的高净值客户。联系方式 hr@gpfis.com、(800) 340-1688、微信 AuchelWorld_GPFIS',
   'img.posterCoconut': 'All About Coconut 传单：椰子甜品店，承接生日、婚礼、迎婴派对和公司活动的餐饮与派对订单，以及秋季椰冻甜品、椰子碗、椰子饮品和糖水菜单',

@@ -22,7 +22,8 @@
     { name: 'Kabuki Japanese Steakhouse', logo: 'images/partners/kabuki.png', w: 420, h: 112 },
     { name: 'O-CHA', logo: 'images/partners/ocha.png', w: 600, h: 180 },
     { name: 'UNIPRO 优普云锐', logo: 'images/partners/unipro.png', w: 480, h: 133 },
-    { name: 'A Plus Dental Care', logo: 'images/partners/aplus-dental.jpg', w: 420, h: 374, popup: false }
+    { name: 'A Plus Dental Care', logo: 'images/partners/aplus-dental.jpg', w: 420, h: 374, popup: false },
+    { name: 'cakeposer', logo: 'images/partners/cakeposer.png', w: 317, h: 370, popup: false }
   ];
 
   function storage(type) {

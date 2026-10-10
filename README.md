@@ -13,6 +13,7 @@ js/i18n.js      Chinese translations
 js/program.js   Concert program and choir/band/crew roster (English + Chinese)
 js/main.js      Language toggle, mobile menu, partner logos, partner popup
 images/         Photos, poster, logos, QR code
+files/          Downloadable concert program (PDF)
 ```
 
 ## Publishing at concert.capate.org (Bluehost)
@@ -21,7 +22,7 @@ The site lives at **https://concert.capate.org**, the "AutumnConcert" site in CA
 
 1. In Bluehost, go to **Websites**. On the **AutumnConcert** row, click **File Manager**. This opens that site's folder.
 2. Download a backup of anything already there, then delete it. That's probably an old `index.html`.
-3. Upload a zip of the site files, where `index.html`, `donate.html`, `partners.html`, `css/`, `js/` and `images/` sit at the top level of the zip. Leave out `README.md` and `.git`.
+3. Upload a zip of the site files, where `index.html`, `donate.html`, `partners.html`, `css/`, `js/`, `images/` and `files/` sit at the top level of the zip. Leave out `README.md` and `.git`.
 4. Right-click the zip and choose **Extract** into the same folder. Then delete the zip.
 5. Open https://concert.capate.org and hard-refresh (Ctrl+Shift+R).
 6. In the capate.org WordPress admin, add a **Custom Link** to `https://concert.capate.org` in the menu (Appearance → Menus).
@@ -52,6 +53,7 @@ Add `?lang=zh` to any link to open it in Chinese, e.g. `https://concert.capate.o
 | Choir/band/crew lists | `ROSTER` in `js/program.js` (`NAMES` holds English spellings of Chinese names) |
 | Partners | the tier sections in `partners.html` **and** the `PARTNERS` list in `js/main.js` (logo strip + popup; add `popup: false` to keep a logo out of the popup) |
 | Donation link | the `Donate now` button in `donate.html` |
+| Concert program PDF | replace `files/voices-of-autumn-concert-program.pdf`, keeping the name (the Schedule button and footer links point to it); if the page count or size changes, update the note under the button (`sched.dlNote` in `index.html` and `js/i18n.js`) |
 | Hero photo | replace `images/hero-autumn.jpg` (a wider, higher-resolution photo, ~1600×800, will look sharper) |
 
 The partner popup appears once per browser session on the Home and Donate pages. It never appears on the Partners page.

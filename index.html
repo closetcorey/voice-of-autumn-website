@@ -46,6 +46,7 @@
   <symbol id="i-trophy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6M18 9h1.5a2.5 2.5 0 0 0 0-5H18M4 22h16M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22M18 2H6v7a6 6 0 0 0 12 0V2Z"/></symbol>
   <symbol id="i-umbrella" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12a10 10 0 0 0-20 0Z"/><path d="M12 12v8a2 2 0 0 0 4 0M12 2v1"/></symbol>
   <symbol id="i-ext" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M10 14 21 3M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol>
+  <symbol id="i-download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></symbol>
   <symbol id="i-heart" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></symbol>
 </svg>
 
@@ -127,6 +128,10 @@
       <div class="sec-head center">
         <h2 id="schedule-h" data-i18n="sched.h">Schedule</h2>
         <p data-i18n="sched.p">The program runs in two halves with an intermission. Exact times will be announced.</p>
+        <p class="sched-dl">
+          <a class="btn" href="files/voices-of-autumn-concert-program.pdf" download><svg class="ic" aria-hidden="true"><use href="#i-download"/></svg><span data-i18n="sched.dl">Download the full program</span></a>
+          <small data-i18n="sched.dlNote">PDF · 15 pages · 6 MB</small>
+        </p>
       </div>
       <div class="program" id="program">
         <noscript><p class="center" data-i18n="sched.noscript">Please turn on JavaScript to see the full program.</p></noscript>
@@ -223,6 +228,7 @@
     <p data-i18n-html="foot.l2">Questions? <a href="mailto:event@capate.org">event@capate.org</a> · In partnership with <a href="https://capate.org/">CAPA-TE</a></p>
     <ul class="foot-links">
       <li><a href="#schedule" data-i18n="nav.schedule">Schedule</a></li>
+      <li><a href="files/voices-of-autumn-concert-program.pdf" download data-i18n="foot.program">Program (PDF)</a></li>
       <li><a href="#visit" data-i18n="nav.visit">Visit</a></li>
       <li><a href="partners.html" data-i18n="nav.partners">Partners</a></li>
       <li><a href="donate.html" data-i18n="nav.donate">Donate</a></li>

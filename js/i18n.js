@@ -54,6 +54,8 @@ window.VOA_ZH = {
   // schedule
   'sched.h': '节目单',
   'sched.p': '节目分上下两个半场，中场休息。具体时间将另行公布。',
+  'sched.dl': '下载完整节目单',
+  'sched.dlNote': 'PDF · 15 页 · 6 MB',
   'sched.noscript': '请开启 JavaScript 以查看完整节目单。',
 
   // choir
@@ -95,6 +97,7 @@ window.VOA_ZH = {
   'thanks.btn': '认识我们的合作伙伴',
 
   // footer
+  'foot.program': '下载节目单 (PDF)',
   'foot.l1': '威尔逊农场公园 · 2026年10月10日下午 2–5 点 · 免费 · 适合所有年龄',
   'foot.l2': '如有疑问？<a href="mailto:event@capate.org">event@capate.org</a> · 与 <a href="https://capate.org/">CAPA-TE</a> 合作举办',
 

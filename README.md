@@ -22,7 +22,7 @@ The site lives at **https://concert.capate.org**, the "AutumnConcert" site in CA
 
 1. In Bluehost, go to **Websites**. On the **AutumnConcert** row, click **File Manager**. This opens that site's folder.
 2. Download a backup of anything already there, then delete it. That's probably an old `index.html`.
-3. Upload a zip of the site files, where `index.html`, `donate.html`, `partners.html`, `css/`, `js/`, `images/` and `files/` sit at the top level of the zip. Leave out `README.md` and `.git`.
+3. Upload a zip of the site files, where `index.html`, `donate.html`, `partners.html`, `css/`, `js/`, `images/` and `files/` sit at the top level of the zip. Leave out `README.md`, `.git` and `.claude`.
 4. Right-click the zip and choose **Extract** into the same folder. Then delete the zip.
 5. Open https://concert.capate.org and hard-refresh (Ctrl+Shift+R).
 6. In the capate.org WordPress admin, add a **Custom Link** to `https://concert.capate.org` in the menu (Appearance → Menus).
@@ -57,6 +57,10 @@ Add `?lang=zh` to any link to open it in Chinese, e.g. `https://concert.capate.o
 | Hero photo | replace `images/hero-autumn.jpg` (a wider, higher-resolution photo, ~1600×800, will look sharper) |
 
 The partner popup appears once per browser session on the Home and Donate pages. It never appears on the Partners page.
+
+### Humanizer skill
+
+`.claude/skills/humanizer/` holds the [humanizer](https://github.com/blader/humanizer) skill (MIT license, copied unchanged). Claude Code sessions opened on this repo load it, so you can type `/humanizer` and paste text, or ask Claude to "humanize the copy in partners.html". It rewrites English text that reads as AI-generated without changing the facts. To update it, replace `SKILL.md` with the latest version from that repository.
 
 ## Previewing locally
 

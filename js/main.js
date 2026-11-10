@@ -63,7 +63,7 @@
           '<button type="button" class="popup-x" data-close aria-label="Close" data-i18n-attr="aria-label:pop.close">×</button>' +
         '</div>' +
         '<h2 id="popup-h" data-i18n="pop.h">Become a Voices of Autumn partner</h2>' +
-        '<p data-i18n="pop.p">Your support keeps the concert free for every family. Partners are featured on our website, in the program, and on stage, in English and Chinese.</p>' +
+        '<p data-i18n="pop.p">Your support keeps the concert free for every family. Partners appear on our website, in the program, and on stage, in English and Chinese.</p>' +
         '<div class="partner-strip compact" data-partner-strip></div>' +
         '<div class="popup-actions">' +
           '<a class="btn" href="partners.html" data-seen autofocus data-i18n="pop.go">See partnership options</a>' +

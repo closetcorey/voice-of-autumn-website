@@ -1,4 +1,4 @@
-# Voices of Autumn — event mini-site
+# Voices of Autumn event mini-site
 
 Bilingual (English / 中文) site for **Voices of Autumn**, CAPA-TE's free community concert at Wilson Farm Park on Saturday, October 10, 2026, 2–5 pm.
 
